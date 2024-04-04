@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">app_cdz_android</string>
+    <string name="app_name">Cavaleiros do Zodíaco</string>
+    <string name="enter_name">Nome</string>
+    <string name="enter_armor">Armadura</string>
+    <string name="add_record">Salvar</string>
+    <string name="btn_update">Alterar</string>
+    <string name="btn_delete">Deletar</string>
+    <string name="empty_list_text">Não há registros.</string>
+
 </resources>
