@@ -34,7 +34,7 @@ public class DBManager {
     }
 
     public Cursor fetch() {
-        String[] columns = new String[] { DataBaseHelper.ID, DataBaseHelper.NOME, DataBaseHelper.ARMADURA };
+        String[] columns = new String[] { DataBaseHelper._ID, DataBaseHelper.NOME, DataBaseHelper.ARMADURA };
         Cursor cursor = database.query(DataBaseHelper.TABLE_NAME, columns, null, null, null, null, null);
         if (cursor != null) {
             cursor.moveToFirst();
@@ -46,10 +46,10 @@ public class DBManager {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DataBaseHelper.NOME, nome);
         contentValues.put(DataBaseHelper.ARMADURA, armadura);
-        return database.update(DataBaseHelper.TABLE_NAME, contentValues, DataBaseHelper.ID + " = " + _id, null);
+        return database.update(DataBaseHelper.TABLE_NAME, contentValues, DataBaseHelper._ID + " = " + _id, null);
     }
 
-    public void delete(long id) {
-        database.delete(DataBaseHelper.TABLE_NAME, DataBaseHelper.ID + "=" + id, null);
+    public void delete(long _id) {
+        database.delete(DataBaseHelper.TABLE_NAME, DataBaseHelper._ID + "=" + _id, null);
     }
 }

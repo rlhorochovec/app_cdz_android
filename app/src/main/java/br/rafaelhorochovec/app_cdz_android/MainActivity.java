@@ -3,7 +3,6 @@ package br.rafaelhorochovec.app_cdz_android;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import br.rafaelhorochovec.app_cdz_android.database.DBManager;
 import br.rafaelhorochovec.app_cdz_android.database.DataBaseHelper;
@@ -22,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private SimpleCursorAdapter adapter;
 
     final String[] from = new String[] {
-            DataBaseHelper.ID,
-            DataBaseHelper.NOME, DataBaseHelper.ARMADURA };
+        DataBaseHelper._ID,
+        DataBaseHelper.NOME,
+        DataBaseHelper.ARMADURA
+    };
 
     final int[] to = new int[] { R.id.id, R.id.name, R.id.armor };
 

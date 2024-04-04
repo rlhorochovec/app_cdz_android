@@ -10,7 +10,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_NAME = "cavaleiros";
 
     // Table columns
-    public static final String ID = "id";
+    public static final String _ID = "_id";
     public static final String NOME = "nome";
     public static final String ARMADURA = "armadura";
 
@@ -18,10 +18,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     static final String DB_NAME = "CDZ.DB";
 
     // DataBase version
-    static final int DB_VERSION = 1;
+    static final int DB_VERSION = 2;
 
     // Creating table query
-    private static final String CREATE_TABLE = "create table " + TABLE_NAME + "(" + ID
+    private static final String CREATE_TABLE = "create table " + TABLE_NAME + "(" + _ID
             + " INTEGER PRIMARY KEY AUTOINCREMENT, " + NOME + " TEXT NOT NULL, " + ARMADURA + " TEXT);";
 
     public DataBaseHelper(Context context) {
