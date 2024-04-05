@@ -6,5 +6,4 @@
     <string name="btn_update">Alterar</string>
     <string name="btn_delete">Deletar</string>
     <string name="empty_list_text">Não há registros.</string>
-
 </resources>
