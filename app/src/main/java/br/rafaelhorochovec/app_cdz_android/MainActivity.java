@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.add_record) {
+        if (id == R.id.add_new) {
             Intent add_mem = new Intent(this, AddKnightActivity.class);
             startActivity(add_mem);
         }
