@@ -28,7 +28,7 @@ public class AddKnightActivity extends Activity implements OnClickListener {
         nomeEditText = findViewById(R.id.name_edittext);
         armaduraEditText = findViewById(R.id.armor_edittext);
 
-        btnSalvar = findViewById(R.id.add_new);
+        btnSalvar = findViewById(R.id.btn_save);
 
         dbManager = new DBManager(this);
         dbManager.open();
@@ -38,7 +38,7 @@ public class AddKnightActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.add_new:
+            case R.id.btn_save:
                 final String nome = nomeEditText.getText().toString();
                 final String armadura = armaduraEditText.getText().toString();
 
